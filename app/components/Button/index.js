@@ -4,8 +4,8 @@
 *
 */
 
-import React from 'react';
-import styles from './styles.css';
+import React from 'react'
+import styles from './styles.css'
 
 class Button extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -13,8 +13,8 @@ class Button extends React.Component { // eslint-disable-line react/prefer-state
       <button className={styles.button}>
         Test button - please
       </button>
-    );
+    )
   }
 }
 
-export default Button;
+export default Button
