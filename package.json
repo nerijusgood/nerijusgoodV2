@@ -103,6 +103,10 @@
       }
     },
     "rules": {
+      "semi": [
+        "error",
+        "never"
+      ],
       "arrow-body-style": [
         2,
         "as-needed"
