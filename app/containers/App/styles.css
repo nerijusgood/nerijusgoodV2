@@ -1,9 +1,12 @@
-/**
- * styles.css
- *
- * App container styles
- */
+@font-face {
+  font-family: hensaregular;
+  src:
+    url('assets/fonts/hensa-webfont.woff2') format('woff2'),
+    url('assets/fonts/hensa-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-.container {
+.App {
   display: block;
 }

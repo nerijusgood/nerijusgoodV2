@@ -17,9 +17,9 @@ export default class HomePage extends React.Component { // eslint-disable-line r
 
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <h2>
+        <FormattedMessage {...messages.header} />Yo
+      </h2>
     )
   }
 }

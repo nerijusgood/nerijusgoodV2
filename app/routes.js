@@ -19,25 +19,17 @@ export default function createRoutes(store) {
   return [
     {
       path: '/',
-      name: 'home',
-      getComponent(nextState, cb) {
-        const importModules = Promise.all([
-          System.import('containers/HomePage'),
-        ])
-
-        const renderRoute = loadModule(cb)
-
-        importModules.then(([component]) => {
-          renderRoute(component)
-        })
-
-        importModules.catch(errorLoading)
+      name: 'offline',
+      getComponent(location, cb) {
+        System.import('containers/Offline')
+          .then(loadModule(cb))
+          .catch(errorLoading)
       },
     }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
-        System.import('containers/NotFoundPage')
+        System.import('containers/Offline')
           .then(loadModule(cb))
           .catch(errorLoading)
       },
