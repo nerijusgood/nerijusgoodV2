@@ -16,7 +16,7 @@ export class Offline extends React.Component { // eslint-disable-line react/pref
     return (
       <div>
         <Helmet
-          title='Coming soon...'
+          title='nerijusgood'
           meta={[
             { name: 'description', content: 'Description of Offline' },
           ]}
